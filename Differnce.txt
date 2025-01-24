@@ -1,0 +1,19 @@
+OLD 
+
+{"transaction_id":"2000000733440902","in_app_ownership_type":"PURCHASED","quantity":"1","original_transaction_id":"2000000425986119","subscription_group_identifier":"21255454","purchase_date_pst":"2024-10-04 04:26:35 America\/Los_Angeles","original_purchase_date_ms":"1696233996000","is_in_intro_offer_period":"false","expires_date":"2024-10-04 11:29:35 Etc\/GMT","original_purchase_date_pst":"2023-10-02 01:06:36 America\/Los_Angeles","is_trial_period":"false","expires_date_pst":"2024-10-04 04:29:35 America\/Los_Angeles","original_purchase_date":"2023-10-02 08:06:36 Etc\/GMT","expires_date_ms":"1728041375000","purchase_date_ms":"1728041195000","product_id":"com.dxc.manutd.qaenv.silver","purchase_date":"2024-10-04 11:26:35 Etc\/GMT","web_order_line_item_id":"2000000076357419"}
+
+
+NEW
+
+{"transactionId":"2000000733436686","originalTransactionId":"2000000425986119","webOrderLineItemId":"2000000076357096","bundleId":"com.dxc.mu.qa","productId":"com.dxc.manutd.qaenv.silver","subscriptionGroupIdentifier":"21255454","purchaseDate":1728041015000,"originalPurchaseDate":1696233996000,"expiresDate":1728041195000,"quantity":1,"type":"Auto-Renewable Subscription","inAppOwnershipType":"PURCHASED","signedDate":1728041028625,"environment":"Sandbox","transactionReason":"RENEWAL","storefront":"IND","storefrontId":"143467","price":99000,"currency":"INR"}
+
+
+present in both
+transaction_id,in_app_ownership_type,quantity,original_transaction_id,subscription_group_identifier,originalPurchaseDate,purchase_date_ms,product_id
+
+Not present in new 
+is_in_intro_offer_period,is_trial_period, Dates in pst
+
+
+Extra filed in new response
+"type":"Auto-Renewable , transactionReason":"RENEWAL"
